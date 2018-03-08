@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+							<title>SignUpWithVue.JS</title>
+				    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+					<link rel="stylesheet" type="text/css" href="style.css">
+					<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+					<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+					<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+					<link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+			<div class="page">
+
+
+            				<center><h1>SignUpWithVue.JS</h1></center>
+
+               <form id="app" @submit="signUp" action="file:///home/grk/Bureau/frontVuejs/login.html?" method="post">
+  				  <center>
+  					<p v-if="errors.length">
+    					<b id="bold">Please correct the following error(s):</b>
+    					<p>
+      						<p v-for="error in errors" id="errors">{{ error }}</p><br>
+    					</p>
+  					</p>
+  				  <br><br>
+  				  <center><h2>Sign Up right here</h2></center>
+  				  <i class="fa fa-hand-o-down" style="font-size:50px"></i>
+  				  <div class="rcorner1">
+				  <p>
+				    <label for="username">Username:<i class="fa fa-user"></i><label><br>
+				    <input type="text" name="username" id="username" v-model="username"><br><br><br><br>
+				  </p>
+
+				  <p>
+				    <label for="email">E-mail:<i class="fa fa-envelope"></i><label><br>
+				    <input type="email" name="email" id="email" v-model="email"><br><br><br>
+				  </p>
+
+				  <p>
+				  	<label for="password">Password:<i class="fa fa-lock" style="font-size:36px"></i><label><br>
+				    <input type="password" name="password" id="password" v-model="password">
+				  </p>
+				 </div>
+				    <center><button type="submit" value="Submit">Submit</button></center> 
+
+
+				</center>
+				</form>
+		</div>
+
+<script src="vue.js"></script>
+</body>
+</html>

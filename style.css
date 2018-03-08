@@ -1,0 +1,104 @@
+body {
+	/*background: linear-gradient(lightGrey,#34495e);*/
+	background-image:url('http://verdewall.com/wp-content/uploads/2016/08/Background-Images-4H9.jpg');
+	/*background-color:red;*/
+
+}
+
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+h1 {
+	margin-top:180px;
+    font-family: 'Bowlby One SC', cursive;
+    font-size:80px;
+    color:white;
+    text-shadow: 5px 5px 6px black;
+}
+
+h2 {
+	font-family: 'Alfa Slab One', cursive;
+	font-size:50px;
+}
+
+
+.rcorner1 {
+	border-radius: 25px;
+    border: 5px solid black;
+    padding: 20px; 
+    width: 600px;
+    height: 300px;
+    margin-bottom: 50px;
+    padding-bottom:150px;
+    padding-left:1%;
+    padding-right:1%;
+    box-shadow: 10px 5px 5px lightGrey;
+
+
+}
+
+.rcorner {
+	border-radius: 25px;
+    border: 5px solid black;
+    padding: 20px; 
+    width: 600px;
+    height: 150px;
+    margin-bottom:50px;
+    padding-bottom:150px;
+    padding-left:1%;
+    padding-right:1%;
+    box-shadow: 15px 5px 5px lightGrey;    
+}
+
+#errors {
+	font-size:35px;
+	font-family: 'Alfa Slab One', cursive;
+	
+}
+
+b {
+	font-size:50px;
+	font-family: 'Alfa Slab One', cursive;
+	color:red;
+	text-shadow: 5px 5px 6px black;
+}
+
+
+
+label {
+	font-family: 'Leckerli One', cursive;
+	font-size:25px;
+}
+
+input {
+	border-radius: 5px;
+}
+
+button {
+	border-radius:5px;
+	font-family: 'Alfa Slab One', cursive;
+	background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-size:30px;
+    box-shadow: 5px 5px 5px lightGrey;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+
+
+}
+
+button:hover {
+	width: 300px;
+}
