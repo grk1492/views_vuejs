@@ -1,9 +1,11 @@
 body {
-	/*background: linear-gradient(lightGrey,#34495e);*/
 	background-image:url('http://verdewall.com/wp-content/uploads/2016/08/Background-Images-4H9.jpg');
-	/*background-color:red;*/
+	background-repeat:round;
+
+	
 
 }
+
 
 @-webkit-keyframes example {
     from {background-color: red;}
@@ -22,11 +24,13 @@ h1 {
     font-size:80px;
     color:white;
     text-shadow: 5px 5px 6px black;
+
 }
 
 h2 {
 	font-family: 'Alfa Slab One', cursive;
 	font-size:50px;
+
 }
 
 

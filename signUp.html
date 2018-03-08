@@ -19,7 +19,7 @@
 
             				<center><h1>SignUpWithVue.JS</h1></center>
 
-               <form id="app" @submit="signUp" action="file:///home/grk/Bureau/frontVuejs/login.html?" method="post">
+               <form id="app" @submit="signUp" action="login.html" method="post">
   				  <center>
   					<p v-if="errors.length">
     					<b id="bold">Please correct the following error(s):</b>
@@ -33,7 +33,7 @@
   				  <div class="rcorner1">
 				  <p>
 				    <label for="username">Username:<i class="fa fa-user"></i><label><br>
-				    <input type="text" name="username" id="username" v-model="username"><br><br><br><br>
+				    <input type="text" name="username" id="username" v-model="username"><br><br>
 				  </p>
 
 				  <p>
